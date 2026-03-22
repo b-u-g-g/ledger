@@ -60,6 +60,7 @@ The Compliance Matrix flips this. Clients on rows, service categories on columns
 ## Future Scope
 
 - **Email / Slack alerts** — trigger a notification when a task crosses its due date. Cron job on the backend, webhook to Slack or SendGrid for email.
+- **Live Dashboard** — Realtime dashboard for managers
 - **Deadline countdown** — show "3 days left" on task cards instead of just the raw date.
 - **Client portal view** — a read-only link per client so they can see their own tasks without logging into the internal tool.
 - **Audit log** — track who changed what and when. Especially important for compliance work where the paper trail matters.
