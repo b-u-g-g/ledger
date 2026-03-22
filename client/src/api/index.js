@@ -5,7 +5,9 @@
  * /api → localhost:3001 in dev; Express serves everything in production.
  */
 
-const BASE = '/api'
+// In production VITE_API_URL = your Render backend URL (e.g. https://ledgers-api.onrender.com)
+// In dev, falls back to /api which Vite proxies to localhost:3001
+const BASE = (import.meta.env.VITE_API_URL || '') + '/api'
 
 async function handleResponse(res) {
   const data = await res.json()
