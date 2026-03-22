@@ -1,9 +1,9 @@
 const CARDS = [
   {
     id: 'tasks',
-    icon: '📋',
+    
     label: 'Compliance Tasks',
-    tagline: 'Track. File. Close.',
+    
     description:
       'Manage all client compliance deadlines in one place. Add tasks, update statuses, and instantly spot overdue filings.',
     accent: '#1a1a1a',
@@ -12,9 +12,7 @@ const CARDS = [
   },
   {
     id: 'matrix',
-    icon: '📊',
     label: 'Compliance Matrix',
-    tagline: 'See everything. Miss nothing.',
     description:
       "A bird\u2019s-eye view of compliance health across every client and service category \u2014 overdue, pending, and completed at a glance.",
     accent: '#c0392b',

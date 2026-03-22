@@ -555,6 +555,51 @@ input, select, textarea { font: inherit; }
   min-height: 0;
 }
 
+/* ── Action bar (Download / Share) ──────────────────────────────────────── */
+.matrix-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  padding: 0 0 16px;
+}
+
+.matrix-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 8px 16px;
+  font-size: 13px;
+  font-weight: 500;
+  border-radius: var(--radius);
+  border: 1.5px solid var(--color-border);
+  background: var(--color-surface);
+  color: var(--color-text);
+  cursor: pointer;
+  transition: background .15s, border-color .15s, color .15s, transform .1s;
+  white-space: nowrap;
+}
+.matrix-btn:hover:not(:disabled) {
+  background: var(--color-text);
+  color: #fff;
+  border-color: var(--color-text);
+  transform: translateY(-1px);
+}
+.matrix-btn:disabled { opacity: .5; cursor: not-allowed; }
+.matrix-btn--pdf:hover:not(:disabled)   { background: #c0392b; border-color: #c0392b; }
+.matrix-btn--excel:hover:not(:disabled) { background: #2d6a4f; border-color: #2d6a4f; }
+
+.matrix-btn__spinner {
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  border: 2px solid currentColor;
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: spin .7s linear infinite;
+  flex-shrink: 0;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
 /* Summary cards row */
 .matrix-summary {
   display: flex;
