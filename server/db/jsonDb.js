@@ -8,8 +8,8 @@
 const fs = require('fs');
 const path = require('path');
 
-// data.json lives at the repo root, two levels up from server/db/
-const DB_PATH = path.join(__dirname, '..', '..', 'data.json');
+// data.json now lives inside server/, one level up from server/db/
+const DB_PATH = path.join(__dirname, '..', 'data.json');
 
 /** Read the entire DB and return a parsed object. */
 function read() {

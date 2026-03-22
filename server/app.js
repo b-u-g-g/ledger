@@ -24,7 +24,7 @@ app.use('/api/clients', clientRoutes);
 app.use('/api/tasks', taskRoutes);
 
 // ─── Static Frontend (populated after `npm run build`) ───────────────────────
-// client/ is a sibling of server/ at the repo root
+// client/ is at the repo root, one level up from server/
 const CLIENT_BUILD = path.join(__dirname, '..', 'client', 'dist');
 if (fs.existsSync(CLIENT_BUILD)) {
   app.use(express.static(CLIENT_BUILD));
