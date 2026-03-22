@@ -2,7 +2,6 @@
 
 A lightweight internal tool to track compliance tasks across multiple clients. 
 
----
 
 ## Features
 
@@ -16,7 +15,6 @@ A lightweight internal tool to track compliance tasks across multiple clients.
 - Share matrix via native share or copy link to clipboard
 - Home screen with two entry points: Tasks and Matrix
 
----
 
 ## UI & Color Theme
 
@@ -25,7 +23,6 @@ The color palette is pulled directly from the LedgersCFO website — not chosen 
 
 Why this works: the contrast between white cards and the cream background is soft — it doesn't strain the eyes on long sessions the way a cold grey or pure white background does. This is exactly the palette the LedgersCFO website uses — keeping the internal tool consistent with the brand without having to think about it.
 
----
 
 ## Why the Matrix Matters
 
@@ -35,7 +32,6 @@ The Compliance Matrix flips this. Clients on rows, service categories on columns
 
 **Download and Share** was added because compliance work doesn't stay in one tab. An accountant preparing for a client call needs to pull up the snapshot in a meeting. A manager reviewing the week needs to send it over Slack. PDF gives you a clean printable version with color-coded cells. Excel gives you three sheets — the matrix, a summary with counts, and a flat task dump — so you can filter, sort, or drop it into your own reporting. Share uses the native device share sheet on mobile and copies the link on desktop.
 
----
 
 ## The Thinking Behind the Data
 
@@ -49,7 +45,6 @@ The Compliance Matrix flips this. Clients on rows, service categories on columns
 
 4. **Overdue tasks were seeded intentionally.** Several tasks have past due dates (Form 941 Q4, FC-GPR, Sales Tax Nexus, Delaware Franchise Tax). This was deliberate — the "Overdue" detection logic needs real data to test against, not a toggle.
 
----
 
 ## Insights Behind Key Features
 
@@ -61,7 +56,6 @@ The Compliance Matrix flips this. Clients on rows, service categories on columns
 
 **Matrix cells are interactive** — hover over any cell to see the exact task titles, due dates, and statuses for that client + category combination. The summary numbers at the top update in real time as tasks are completed.
 
----
 
 ## Future Scope
 
@@ -70,7 +64,6 @@ The Compliance Matrix flips this. Clients on rows, service categories on columns
 - **Client portal view** — a read-only link per client so they can see their own tasks without logging into the internal tool.
 - **Audit log** — track who changed what and when. Especially important for compliance work where the paper trail matters.
 
----
 
 ## Stack
 
@@ -83,6 +76,5 @@ The Compliance Matrix flips this. Clients on rows, service categories on columns
 | Excel export | SheetJS (xlsx) |
 | Deployment | Render (backend Web Service + frontend Static Site) |
 
----
 
 Built for LedgersCFO. Intentionally simple. Designed to be extended.
